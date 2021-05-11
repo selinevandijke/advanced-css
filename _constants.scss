@@ -1,0 +1,59 @@
+// Variabelen
+
+// Achtergrondkleuren
+$bodyColor: #c3cfe2;
+$headerColor: #fff;
+$footerColor: #686de0;
+
+// Tekst
+$fontFamily:  Verdana, sans-serif;
+$fontFamilyFooter: Helvetica, sans-serif;;
+
+// Text - Kleuren
+$headerText: #5a5a5a;
+$colorH1: #fff;
+$colorH2: #a7aaed;
+
+// Mixins
+@mixin containerStyle {
+    background-color: white;
+    padding: 10px 10px;
+    border: 3px solid #DBDBDB;
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 6px 6px 6px rgba(214,214,214,0.57); 
+    box-shadow: 5px 6px 6px 6px rgba(214,214,214,0.57);
+    width: 400px;
+    height: 550px;
+}
+
+@mixin headerText {
+    font-size: 20px;
+    font-family: $fontFamily;
+    color: $headerText;
+    line-height: 30px;
+    padding: 20px;
+    margin: 0px;
+}
+
+
+@mixin footerText() {
+    text-align: center;
+    font-family: $fontFamily;
+    padding-top: 100px;
+
+
+    h1 {
+        color: $colorH1;
+        font-family: $fontFamilyFooter;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        color: $colorH2;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}

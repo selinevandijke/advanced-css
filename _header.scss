@@ -1,0 +1,8 @@
+@import "./constants";
+
+.header {
+
+    p {
+        @include headerText();
+    }
+}

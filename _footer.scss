@@ -1,0 +1,17 @@
+@import "./constants";
+
+.footer {
+    background-color: $footerColor;
+    position: relative;
+    height: 240px;
+    width: 420px;
+    padding: 0px 0px;
+    left: -10px;
+    bottom: 90px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    .footer-text {
+      @include footerText();
+    }
+}
